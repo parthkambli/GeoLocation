@@ -1,0 +1,214 @@
+body {
+  margin: auto;
+}
+
+/* --------------NAVBAR------------------------ */
+.Nav {
+  height: 60px;
+  width: 100%;
+  background-color: rgba(224,156,131, 0.9);
+  padding: 0%;
+  opacity: 0.7;
+}
+
+.Nav a {
+  text-decoration: none;
+}
+/* SOCIAL */
+.logo {
+  margin: 0px;
+}
+
+#social {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+.slogo {
+  height: 50px;
+  width: 50px;
+}
+
+/* Geolocation */
+.Geolocation{
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  color: white;
+  font-weight: bold;
+}
+
+/* --------------SEARCH------------------------ */
+
+#search {
+  padding-top: 80px;
+  height: 400px;
+  background-image: url("../image/food-wallpaper.png");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: 100% 100%;
+}
+
+#logo {
+  height: 150px;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  font-size: 80px;
+  color: #e09c83;
+  text-align: center;
+  margin: auto;
+  animation: revolve 10s infinite;
+}
+@keyframes revolve {
+  0% {
+    transform: rotate(30deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#heading {
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+}
+
+.SearchDrop {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  height: 15%;
+}
+
+.Drop {
+  /* margin: 10px auto; */
+  height: 100%;
+  /* padding: 0px; */
+}
+
+select {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* --------------QUICK SEARCH------------------------ */
+
+#QuickSearch {
+  height: 100%;
+  padding: 20px;
+}
+
+#QuickHeading {
+  color: orange;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+#QuickHeading:hover {
+  font-size: 35px;
+}
+
+#QuickSubHeading {
+  line-height: 2;
+  color: gray;
+  font-size: 20px;
+}
+
+.tileContainer {
+  height: 200px;
+  margin: 15px auto;
+  padding: 0px;
+  box-shadow: 10px 20px 10px gray;
+
+}
+
+.TR {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+
+}
+
+.tileComponent1 {
+  padding: 0px;
+  height: 100%;
+}
+
+.tileComponent1 img {
+  height: 100%;
+  width: 100%;
+}
+
+.tileComponent2 {
+  margin: auto;
+}
+
+.componentHeading h4 {
+  color: orange;
+}
+
+.componentSubHeading {
+  color: gray;
+}
+
+/* --------------FOOTER------------------------ */
+
+footer{
+    /* width:100%; */
+    height:150px;
+    background-color:#e09c83
+}
+
+footer h3{
+  text-align: center;
+}
+
+.foot-container{
+  width: 100%;
+}
+
+@media screen and (max-width:765px){
+    #search {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  #heading {
+    font-size: 35px;
+  }
+
+  .Drop {
+    margin: 10px auto ;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 425px){
+
+  #logo{
+    height: 100px;
+    width: 100px;
+    font-size: 60px;
+  }
+}
